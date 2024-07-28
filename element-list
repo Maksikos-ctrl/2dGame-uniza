@@ -1,0 +1,8 @@
+com.maksikos.game
+com.maksikos.game.entities
+com.maksikos.game.gfx
+com.maksikos.game.handlers
+com.maksikos.game.level
+com.maksikos.game.level.tiles
+com.maksikos.game.net
+com.maksikos.game.net.packets
