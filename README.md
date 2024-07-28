@@ -1,7 +1,7 @@
 # Multiplayer Game Server
 ## _Real-Time Multiplayer Game Server with UDP Networking_
 
-[![Build Status](https://travis-ci.org/Maksikos-ctrl/Multiplayer2dGame-Server.svg?branch=master)](https://travis-ci.org/Maksikos-ctrl/Multiplayer2dGame-Server)
+[![Build Status](https://travis-ci.org/Maksikos-ctrl/2dGame-uniza.svg?branch=master)](https://travis-ci.org/Maksikos-ctrl/2dGame-uniza)
 
 
 
