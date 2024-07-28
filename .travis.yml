@@ -1,44 +1,6 @@
-# Travis CI configuration file for Java projects
-
 language: java
-
-# Specify the Java version to use
 jdk:
-  - openjdk17  # You can change this to the version your project needs, e.g., openjdk8, openjdk17
+  - openjdk21
 
-# Specify the Maven version (if using Maven) or Gradle version (if using Gradle)
-# You can also use `mvn` directly if you don't need to specify a version.
-# For Maven:
-before_install:
-  - mvn --version
-
-# For Gradle:
-# before_install:
-#   - gradle --version
-
-# Cache dependencies to speed up builds
-cache:
-  directories:
-    - $HOME/.m2  # Maven cache directory
-    # - $HOME/.gradle  # Uncomment this if using Gradle
-
-# Script to run tests
 script:
-  - mvn test  # For Maven projects
-  # - gradle test  # Uncomment this if using Gradle
-
-# Notifications (optional)
-notifications:
-  email:
-    recipients:
-      - your-email@example.com  # Replace with your email address
-    on_success: change  # Options: always, never, change
-    on_failure: always  # Options: always, never, change
-
-# Define the jobs for building
-jobs:
-  include:
-    - stage: test
-      script: mvn test  # Run tests with Maven
-    # - stage: test
-    #   script: gradle test  # Uncomment this if using Gradle
+  - mvn clean install
